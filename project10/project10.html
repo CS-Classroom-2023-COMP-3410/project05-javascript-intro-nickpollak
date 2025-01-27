@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customizable Keyboard Trainer</title>
+  <link rel="stylesheet" href="project10.css">
+</head>
+<body>
+  <div class="trainer-container">
+    <h1>Customizable Keyboard Trainer</h1>
+    <div class="settings">
+      <label for="difficulty-select">Difficulty:</label>
+      <select id="difficulty-select">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button id="start-button">Start</button>
+      <button id="restart-button" class="hidden">Restart</button>
+    </div>
+    <div id="text-display" class="text-display"></div>
+    <input type="text" id="text-input" class="text-input" disabled placeholder="Start typing here...">
+    <div id="results" class="results hidden">
+      <p id="wpm">Words Per Minute: </p>
+      <p id="accuracy">Accuracy: </p>
+    </div>
+  </div>
+  <script src="project10.js"></script>
+</body>
+</html>
